@@ -1,2 +1,2 @@
-# iNeuron_Assignments
+# Assignments
 Python, ML, DL, NLP solved assignments
