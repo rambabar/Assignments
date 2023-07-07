@@ -61,3 +61,17 @@ curl -X POST -H "Content-Type: application/json" -d '{
 "image2": "path_to_image2"
 }' http://localhost:8000/process_images
 `
+
+To run the Docker image for the Kornia Image Matching application, you need to follow these steps:
+1. Pull the Docker image from Docker Hub by running the following command:
+`
+docker pull rambabar108/kornia_image_matching:v1.0
+`
+
+2. Run the Docker container using the pulled image by executing the following command:
+`
+docker run -p 8000:8000 rambabar108/kornia_image_matching:v1.0
+`
+
+This command starts the Docker container and maps port 8000 on your host machine to port 8000 inside the container. The application running inside the container will be accessible through localhost:8000 in your web browser.
+Ensure that Docker is installed and running on your machine before executing these commands.
