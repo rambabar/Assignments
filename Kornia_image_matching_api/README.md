@@ -59,5 +59,5 @@ The API provides the following endpoint:
 curl -X POST -H "Content-Type: application/json" -d '{
 "image1": "path_to_image1",
 "image2": "path_to_image2"
-}' http://localhost:8000/image/match
+}' http://localhost:8000/process_images
 `
