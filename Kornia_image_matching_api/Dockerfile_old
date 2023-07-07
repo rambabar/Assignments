@@ -1,0 +1,26 @@
+# Dockerfile, Image , Container
+# Dockerfile - Blueprint for building images
+# Image - Image is template for running container
+# Container - Contrainer is actual running process where we have our package project
+
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip3 install --upgrade pip 
+RUN apt-get update
+
+RUN apt-get install -y python3 python3-pip ffmpeg libsm6 libxext6 libgl1-mesa-dev
+
+RUN python3 -m pip install --no-cache-dir -r requirements.txt
+
+#EXPOSE 8000
+#CMD uvicorn main:app --reload
+
+CMD ["python","./main.py"]
+
+# docker build -t rambabar108/kornia_image_matching:v1.0 .
+# docker run -p 8000:8000 rambabar108/kornia_image_matching:v1.0
+# docker push rambabar108/kornia_image_matching:v1.0
