@@ -40,6 +40,12 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# # Install FastAPI explicitly
+# RUN pip install --no-cache-dir fastapi uvicorn
+
+# # Define the command to run the code
+# CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000" ]
+
 # Define the command to run the code
 CMD [ "python", "main.py" ]
 
