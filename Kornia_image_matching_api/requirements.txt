@@ -9,4 +9,4 @@ opencv-python
 fastapi
 uvicorn
 torchvision
-# Pillow
+Pillow
