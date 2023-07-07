@@ -34,7 +34,7 @@ python main.py
 
 The API provides the following endpoint:
 
-### POST /image/match
+### POST /process_images
 
 - Description: Perform image matching between two input images.
 - Request Body:
