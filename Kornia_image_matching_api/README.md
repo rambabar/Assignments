@@ -28,7 +28,7 @@ python main.py
 
 3. The API will start running and provide a RESTful interface to interact with.
 4. Use your preferred HTTP client to send a POST request to the API endpoint with the input images' paths or URLs.
-5. The API will process the images, perform image matching using the Kornia library, and return the matching keypoints and confidence scores.
+5. The API will process the images, perform image matching using the Kornia library, and return the output image in base64 format.
 
 ## API Endpoints
 
