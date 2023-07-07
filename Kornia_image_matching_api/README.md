@@ -47,6 +47,7 @@ The API provides the following endpoint:
 `
 
 - Response Body:
+
 `
 {
 "output_image": "base64_encoded_output_image"
@@ -62,13 +63,15 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:8000/process_images
 `
 
-To run the Docker image for the Kornia Image Matching application, you need to follow these steps:
+## To run the Docker image for the Kornia Image Matching application, you need to follow these steps:
 1. Pull the Docker image from Docker Hub by running the following command:
+
 `
 docker pull rambabar108/kornia_image_matching:v1.0
 `
 
 2. Run the Docker container using the pulled image by executing the following command:
+
 `
 docker run -p 8000:8000 rambabar108/kornia_image_matching:v1.0
 `
